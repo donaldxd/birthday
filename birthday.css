@@ -1,0 +1,172 @@
+﻿body {
+    overflow: hidden;
+    background-image: url('images/grid.png');
+    background-repeat: repeat;
+}
+
+p {
+    color: #4d4d4d;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#about {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+#aboutButton {
+    width: 30px;
+    height: 30px;
+    z-index: 2;
+}
+
+#music {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 2;
+}
+
+#MusicButton {
+    width: 30px;
+    height: 30px;
+    z-index: 2;
+}
+
+#musicPlayer {
+    position: absolute;
+    z-index: 100;
+    top: 10px;
+    right: -500px;
+    background-color: #363636;
+}
+
+#playerMoveOut {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0px;
+    right: 0px;
+    z-index: 2;
+}
+
+#title {
+    top: 10px;
+    text-align: center;
+}
+
+
+#paintCanvas {
+    border: 1px solid #000000;
+    width: 800px;
+    height: 600px;
+    left: 200px;
+}
+
+#CanvasDiv {
+    text-align: center;
+    z-index: 0;
+}
+
+
+#stepDiv {
+    padding: 5px;
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    background-color: #f1f1f1;
+    z-index: 50;
+    border: 1px solid #cfcfcf;
+    -moz-box-shadow: 1px 1px 3px #919191;
+    -webkit-box-shadow: 1px 1px 3px #919191;
+    filter: progid:DXImageTransform.Microsoft.Shadow(color='#919191',Direction=135,Strength=3);
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+
+#toolsDiv {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    z-index: 2;
+}
+
+#toolButton {
+    width: 30px;
+    height: 30px;
+}
+
+
+#closeStepButton {
+    width: 20px;
+    height: 20px;
+    right: 0px;
+    top: 0px;
+    position: absolute;
+}
+
+#OrnamentDiv {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+}
+
+#OrnamentButton {
+    width: 30px;
+    height: 30px;
+    z-index: 2;
+}
+
+#AllOrnamentDiv {
+    padding: 5px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #f1f1f1;
+    z-index: 10;
+    border: 1px solid #cfcfcf;
+    -moz-box-shadow: 1px 1px 3px #919191;
+    -webkit-box-shadow: 1px 1px 3px #919191;
+    filter: progid:DXImageTransform.Microsoft.Shadow(color='#919191',Direction=135,Strength=3);
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+#AllOrnamentDivClose {
+    width: 20px;
+    height: 20px;
+    right: 0px;
+    top: 0px;
+    position: absolute;
+    z-index: 2;
+}
+
+.Ornament {
+    z-index: 30;
+    width: 50px;
+    height: 50px;
+}
+
+
+#OrnamentCanvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+
+
+#happyBirthdayPng {
+    width: 140px;
+    height: 60px;
+}
+

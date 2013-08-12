@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>birthday cake web application for YQY</title>
+    <link href="birthday.css" rel="stylesheet" />
+    <link href="themes/style.css" rel="stylesheet" />
+    <link href="themes/base/jquery.ui.all.css" rel="stylesheet" />
+    <link rel="icon" href="Shamrock.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="Shamrock.ico"
+        type="image/x-icon">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="js/jquery-1.9.1.js"></script>
+    <!--<script src="js/jquery-1.6.1.min.js"></script>-->
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery-jplayer/jquery.jplayer.js"></script>
+    <!--<script src="js/jquery-jplayer/ttw-music-player-min.js"></script>-->
+    <script src="js/jquery-jplayer/ttw-music-player.js"></script>
+    <script src="js/myplaylist.js"></script>
+    <script src="js/jcanvas.min.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var description = '借用大师之手代替我的演奏~';
+            $('#player').ttwMusicPlayer(myPlaylist, {
+                loop: true,
+                autoplay: true,
+                description: description,
+                jPlayer: {
+                    swfPath: 'js/jquery-jplayer' //You need to override the default swf path any time the directory structure changes
+                }
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <!-- about part  -->
+    <div id="about">
+        <img id="aboutButton" src="images/info.png" />
+    </div>
+    <div id="dialog" title="About">
+        <p>叶倩芸，生日快乐！</p>
+        <p>
+            Code by HuangYuan.<br />
+        </p>
+    </div>
+
+    <!--end of about-->
+
+
+    <!--begin of music -->
+    <div id="music">
+        <img id="MusicButton" src="images/music.png" />
+    </div>
+
+    <div id="musicPlayer">
+        <img id="playerMoveOut" src="images/navigate-right-icon.png" />
+        <div id="player"></div>
+    </div>
+    <!--end of music -->
+
+    <!--title-->
+    <div id="title">
+        <img src="images/title.fw.png" />
+    </div>
+    <br />
+    <!--end of title-->
+
+    <!--canvas-->
+    <div id="CanvasDiv">
+
+        <canvas id="paintCanvas"></canvas>
+
+    </div>
+
+    <script>
+
+        initialCanvas();
+    </script>
+
+    <!--end of canvas-->
+
+
+    <!-- 这里是制作控制面板   -->
+
+    <div id="stepDiv">
+        <img id="closeStepButton" src="images/fileclose.png" />
+        <p>选择个你喜欢的图形:</p>
+
+        <span id="shapeRadioGroup">
+            <input type="radio" id="circleShape" name="shape" /><label for="circleShape">圆的</label>
+            <input type="radio" id="rectangleShape" name="shape" /><label for="rectangleShape">方的</label>
+            <input type="radio" id="heartShape" name="shape" /><label for="heartShape">心形</label>
+        </span>
+        <p>上面铺满:</p>
+        <span id="SourceGroup">
+            <input type="radio" id="CreamSource" name="Source" /><label for="CreamSource">鲜奶</label>
+            <input type="radio" id="ChocolateSource" name="Source" /><label for="ChocolateSource">巧克力</label>
+            <input type="radio" id="StrawberrySource" name="Source" /><label for="StrawberrySource">草莓酱</label>
+        </span>
+    </div>
+    <!-- 这里是制作缩小后的控制面板图标-->
+
+    <div id="toolsDiv">
+        <img id="toolButton" src="images/cheff-icon.png" />
+    </div>
+
+    <div id="OrnamentDiv">
+
+        <img id="OrnamentButton" src="images/cake-icon.png" />
+    </div>
+
+    <div id="AllOrnamentDiv">
+        <img id="AllOrnamentDivClose" src="images/fileclose.png" />
+        <!--开始点缀部分-->
+        <br />
+        <table>
+            <tr>
+                <td>
+                    <div class="OrnamentContent">
+                        <img src="images/strawberry.png" class="Ornament" id="strawBerryPng" />
+                    </div>
+                </td>
+                <td>
+                    <div class="OrnamentContent">
+                        <img src="images/strawberry2.png" class="Ornament" id="strawBerryPng2" />
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="OrnamentContent">
+                        <img src="images/candle.png" class="Ornament" id="candlePng" />
+                    </div>
+                </td>
+                <td>
+                    <div class="OrnamentContent">
+                        <img src="images/candle2.png" class="Ornament" id="candlePng2" />
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="OrnamentContent">
+                        <img src="images/cherry.png" class="Ornament" id="cherry" />
+                    </div>
+
+                </td>
+                <td>
+                    <div class="OrnamentContent">
+                        <img src="images/cherry2.png" class="Ornament" id="cherry2" />
+                    </div>
+
+                </td>
+            </tr>
+        </table>
+
+
+
+       
+
+        <div class="OrnamentContent">
+            <img src="images/happybirthday.fw.png" class="Ornament" id="happyBirthdayPng" />
+        </div>
+
+    </div>
+
+    <div id="OrnamentCanvas">
+    </div>
+
+</body>
+</html>

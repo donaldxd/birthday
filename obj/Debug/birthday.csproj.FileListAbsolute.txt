@@ -1,0 +1,5 @@
+E:\workspace\c#\birthday\birthday\bin\birthday.dll
+E:\workspace\c#\birthday\birthday\bin\birthday.pdb
+E:\workspace\c#\birthday\birthday\obj\Debug\birthday.csprojResolveAssemblyReference.cache
+E:\workspace\c#\birthday\birthday\obj\Debug\birthday.dll
+E:\workspace\c#\birthday\birthday\obj\Debug\birthday.pdb
